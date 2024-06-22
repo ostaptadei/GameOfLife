@@ -41,10 +41,11 @@ namespace GameOfLifeTests
             game.SetCellState(2, 3, 1);
             game.SetCellState(3, 3, 1);
             game.SetCellState(2, 4, 1);
+            game.SetCellState(3, 2, 1);
 
             game.NextGeneration();
 
-            Assert.Equal(0, game.GetCellState(2, 3));
+            Assert.Equal(0, game.GetCellState(3, 3));
         }
 
 
